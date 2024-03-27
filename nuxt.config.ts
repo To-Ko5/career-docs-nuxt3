@@ -1,6 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt'],
+  components: [
+    {
+      path: '~/components/app',
+      prefix: 'App'
+    }
+  ],
   shadcn: {
     /**
      * Prefix for all the imported component
