@@ -2,6 +2,10 @@
 export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt', '@nuxtjs/color-mode'],
   css: ['~/assets/css/global.css'],
+  typescript: {
+    strict: true,
+    typeCheck: true
+  },
   colorMode: {
     classSuffix: ''
   },
