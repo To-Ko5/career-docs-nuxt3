@@ -26,6 +26,11 @@ export default defineNuxtConfig({
      */
     componentDir: './components/ui'
   },
-
+  runtimeConfig: {
+    newt: {
+      spaceUid: '',
+      cdnApiToken: ''
+    }
+  },
   devtools: { enabled: true }
 })
