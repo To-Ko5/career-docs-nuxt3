@@ -8,15 +8,17 @@ const { name, position } = defineProps({
 
 <template>
   <section>
-    <div className="flex flex-col sm:flex-row gap-4">
-      <div className="max-w-[112px]">{children}</div>
+    <div class="flex flex-col sm:flex-row gap-4">
+      <div class="max-w-[112px]">
+        <img src="/icon.jpg" :alt="name" />
+      </div>
       <div>
-        <div className="mb-2">
-          <h1 className="text-2xl mb-2 font-bold">{{ name }}</h1>
-          <p className="text-muted-foreground">{{ position }}</p>
+        <div class="mb-2">
+          <h1 class="text-2xl mb-2 font-bold">{{ name }}</h1>
+          <p class="text-muted-foreground">{{ position }}</p>
         </div>
 
-        <div v-if="urlLinks.length > 0" className="print:hidden">
+        <div v-if="urlLinks.length > 0" class="print:hidden">
           <AppExternalLinkArea :url-links="urlLinks" />
         </div>
       </div>
