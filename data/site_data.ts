@@ -1,4 +1,4 @@
-import { BookText } from 'lucide-vue-next'
+import { Link, BookText } from 'lucide-vue-next'
 // import { SiGithub } from '@icons-pack/react-simple-icons'
 import type { url_link } from '@/types/data'
 
@@ -13,9 +13,9 @@ export const date = {
 
 export const urlLinks: url_link[] = [
   {
-    icon: BookText,
-    href: import.meta.env.LINK_URL_1 || '#',
+    icon: Link,
+    href: process.env.LINK_URL_1 || '#',
     tooltip: 'Github'
   },
-  { icon: BookText, href: import.meta.env.LINK_URL_2 || '#', tooltip: 'Qiita' }
+  { icon: BookText, href: process.env.LINK_URL_2 || '#', tooltip: 'Qiita' }
 ]
