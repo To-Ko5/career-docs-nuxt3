@@ -1,5 +1,3 @@
-import type { LucideIcon } from 'lucide-vue-next'
-
 export type work = {
   case: number
   title: string
@@ -18,7 +16,7 @@ export type about = {
 }
 
 export type url_link = {
-  icon: LucideIcon
+  icon: any
   href: string
   tooltip?: string
 }
