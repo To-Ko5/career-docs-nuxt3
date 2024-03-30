@@ -99,7 +99,7 @@ const setPeriod = (startDate: string, endDate: string) => {
       </CardContent>
 
       <CardContent class="text-sm text-muted-foreground whitespace-pre-line">
-        <WorkDescription :content="`${work.description}`" />
+        <AppWorkDescription :content="`${work.description}`" />
       </CardContent>
     </Card>
   </section>
