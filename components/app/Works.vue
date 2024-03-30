@@ -13,7 +13,6 @@ const printStyle =
 <template>
   <section>
     <h2 class="text-xl font-bold mb-4">Works</h2>
-
     <div class="space-y-8">
       <div v-for="(item, index) in works" :key="index" :class="`${printStyle}`">
         <AppWork :work="item" :is-link="true" />
