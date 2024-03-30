@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { title } = defineProps({
+const { title, description } = defineProps({
   title: { type: String, required: true },
   description: { type: String, required: true }
 })
