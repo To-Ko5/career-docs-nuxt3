@@ -9,7 +9,7 @@ const { work, isLink } = defineProps({
 })
 
 const dateFormat = (date: string) => {
-  return dayjs(date).format('YYYY/MM/DD')
+  return dayjs(date).format('YYYY/MM')
 }
 
 const setPeriod = (startDate: string, endDate: string) => {
