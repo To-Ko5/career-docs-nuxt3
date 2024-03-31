@@ -33,8 +33,23 @@ const name = about ? `${about[0].name} | ${site.title}` : site.title
 <template>
   <NuxtLayout name="layout" :title="name" :description="`${site.description}`">
     <main class="container max-w-4xl pb-16 space-y-10">
-      <!-- <Button @click="test">Test</Button> -->
-      <AppHero />
+      <div>
+        <AppDate />
+      </div>
+      <div>
+        <AppProfile
+          v-if="about"
+          :name="`${about[0].name}`"
+          :position="`${about[0].position}`"
+        >
+        </AppProfile>
+      </div>
+      <div>
+        <AppAbout v-if="about" :content="`${about[0].content}`" />
+      </div>
+      <div>
+        <AppWorks v-if="works" :works="works" />
+      </div>
     </main>
   </NuxtLayout>
 </template>
