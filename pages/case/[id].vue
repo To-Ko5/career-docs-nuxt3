@@ -4,7 +4,6 @@ import type { work } from '@/types/data'
 
 const route = useRoute()
 const { id } = route.params
-console.log(route.params)
 const { data } = await useAsyncData(`work-${id}`, async () => {
   const { $newtClient } = useNuxtApp()
   return await $newtClient.getFirstContent<work>({
@@ -17,8 +16,6 @@ const { data } = await useAsyncData(`work-${id}`, async () => {
 })
 const work = data.value
 const title = work ? `${work.title} | ${site.title}` : site.title
-
-console.log(data.value)
 </script>
 
 <template>
