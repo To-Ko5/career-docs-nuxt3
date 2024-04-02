@@ -10,7 +10,7 @@ const { title, description } = defineProps({
   <div>
     <Html lang="ja">
       <Head>
-        <Title>{{ title }}</Title>
+        <Title>{{ title }} | {{ site.title }}</Title>
         <Meta name="description" :content="`${description}`" />
       </Head>
     </Html>
