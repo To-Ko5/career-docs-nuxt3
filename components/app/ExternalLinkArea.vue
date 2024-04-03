@@ -24,8 +24,14 @@ const { urlLinks } = defineProps({
                   rel="noopener noreferrer"
                   :aria-label="`${link.tooltip}`"
                 >
+                  <Icon
+                    v-if="typeof link.icon === 'string'"
+                    :name="link.icon"
+                    class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all"
+                  />
                   <component
                     :is="link.icon"
+                    v-else
                     class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all"
                   />
                 </a>

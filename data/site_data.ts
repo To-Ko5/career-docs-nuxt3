@@ -1,5 +1,4 @@
-import { Link, BookText } from 'lucide-vue-next'
-// import { SiGithub } from '@icons-pack/react-simple-icons'
+import { BookText } from 'lucide-vue-next'
 import type { url_link } from '@/types/data'
 
 export const site = {
@@ -13,7 +12,7 @@ export const date = {
 
 export const urlLinks: url_link[] = [
   {
-    icon: Link,
+    icon: 'uil:github',
     href: process.env.LINK_URL_1 || '#',
     tooltip: 'Github'
   },
