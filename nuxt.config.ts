@@ -4,7 +4,8 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'shadcn-nuxt',
     '@nuxtjs/color-mode',
-    'dayjs-nuxt'
+    'dayjs-nuxt',
+    'nuxt-icon'
   ],
   css: ['~/assets/css/global.css'],
   typescript: {

@@ -31,6 +31,7 @@
     "dayjs-nuxt": "^2.1.9",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
+    "nuxt-icon": "^0.6.10",
     "prettier": "^3.2.5",
     "shadcn-nuxt": "^0.10.2",
     "typescript": "^5.4.3",
